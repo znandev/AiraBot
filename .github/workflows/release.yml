@@ -35,7 +35,7 @@ jobs:
           sha256sum dist/airabot-* > dist/checksum.txt
 
       - name: Upload release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           files: |
             dist/airabot-${{ matrix.node-target }}
